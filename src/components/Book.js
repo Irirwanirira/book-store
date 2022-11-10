@@ -1,8 +1,9 @@
 import React from 'react';
+/* eslint-disable */ 
 import PropTypes from 'prop-types';
 
-const Book = ({ book }) => 
-  
+const Book = ({ book }) =>
+
   <div>
     <p>Title: {book.Book}</p>
         <p>Author: {book.author}</p>

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Categories from './components/Category';
 import BookDisplay from './components/BookDisplay';
+/* eslint-disable */
 
 function App() {
   return (

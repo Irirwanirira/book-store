@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+/* eslint-disable */ 
 const Categories = () => {
   return (
     <div>
