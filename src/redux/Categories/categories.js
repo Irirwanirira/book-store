@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 const Mark_Category = 'redux/category'
 
 const CATEGORIES  = [];
