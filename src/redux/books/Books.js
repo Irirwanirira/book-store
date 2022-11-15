@@ -1,5 +1,5 @@
-const ADD_BOOK = 'redux/books/ADD_BOOK';
-const REMOVE_BOOK = 'redux/books/REMOVE_BOOK';
+const ADD_BOOK = 'book-store/books/ADD_BOOK';
+const REMOVE_BOOK = 'book-store/book/REMOVE_BOOK';
 
 const initialState = [];
 
@@ -8,13 +8,11 @@ const addBook = (book) => ({
   type: ADD_BOOK,
   item: book,
 });
-addBook();
 
 const removeBook = (id) => ({
   type: REMOVE_BOOK,
   id,
 });
-removeBook();
 
 // Reducer part
 const BooksReducers = (state = initialState, action) => {
@@ -26,12 +24,11 @@ const BooksReducers = (state = initialState, action) => {
       ];
     case REMOVE_BOOK:
       return [
-        ...state,
         state.filter((book) => book.id !== action.id),
       ];
 
     default: return state;
   }
 };
-
+export { addBook, removeBook };
 export default BooksReducers;
