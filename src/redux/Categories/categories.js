@@ -1,27 +1,25 @@
-/* eslint-disable */ 
-const Mark_Category = 'redux/category'
+const MarkCategory = 'redux/category';
 
-const CATEGORIES  = [];
+const CATEGORIES = [];
 
-// Action part 
+// Action part
 
-const category = ()=> {
-    return {
-        type: Mark_Category
-    }
-},
+const category = () => ({
+  type: MarkCategory,
+});
+category();
 
 // Reducers
 
 const CategoryReducers = (state = CATEGORIES, action) => {
-    switch(action.type){
-        case Mark_Category:
-            return [
-                ...state,
-                Under construction
-            ];
-        default return state;
-    }
+  switch (action.type) {
+    case MarkCategory:
+      return [
+        ...state,
+        'Underconstruction',
+      ];
+    default: return state;
+  }
 };
 
 export default CategoryReducers;
