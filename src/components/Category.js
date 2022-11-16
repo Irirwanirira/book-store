@@ -1,5 +1,5 @@
-import { useSelector, useDispatch } from 'react-redux'
-import category from "../redux/Categories/categories";
+import { useSelector, useDispatch } from 'react-redux';
+import { category }from '../redux/Categories/categories';
 
 /* eslint-disable */ 
 const Categories = () => {
