@@ -5,14 +5,19 @@ import { removeBook } from '../redux/books/Books';
 
 /* eslint-disable */
 
-const Book = ({ book }) => {
+const Book = (book) => {
   const dispatch = useDispatch();
-  console.log(book.id)
+  const { id, author, Book } = book;
+
+  const handleDelte = () => {
+    dispatch(removeBook(id));
+  };
+
   return (
-    <div key={book.id}>
-      <p>Book: { book.Book }</p>
-      <p>Author: { book.author }</p>
-      <button type="button" onClick={() => dispatch(removeBook(book.id))}>
+    <div>
+      <p>Book: {Book}</p>
+      <p>Author: {author}</p>
+      <button type='button' onClick={handleDelte}>
         Remove Book
       </button>
     </div>

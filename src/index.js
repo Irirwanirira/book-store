@@ -7,7 +7,9 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={Mystore}>
+  <React.StrictMode>
+    <Provider store={Mystore}>
     <App />
-  </Provider>,
+  </Provider>
+  </React.StrictMode>,
 );

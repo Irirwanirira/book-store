@@ -1,6 +1,6 @@
 /* eslint-disable*/
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import BooksReducers from './books/Books';
+import BooksReducers from './books/books';
 import { CategoryReducers } from './Categories/categories';
 
 const reducers = combineReducers({

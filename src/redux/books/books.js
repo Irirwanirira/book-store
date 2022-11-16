@@ -1,22 +1,18 @@
 const ADD_BOOK = 'book-store/books/ADD_BOOK';
 const REMOVE_BOOK = 'book-store/book/REMOVE_BOOK';
 
-const initialState = [
-  { Book: 'Last Enemy', author: 'joseph', id: 1 },
-  { Book: 'wine and life', author: 'Mark', id: 2 },
-  { Book: 'night to forget', author: 'Irirwanirira', id: 3 },
-  { Book: 'recursed tannel', author: 'Actrox', id: 4 },
-];
+const initialState = [];
 
 // Action part
-const addBook = (book) => ({
+const addBook = (ITEM) => ({
+
   type: ADD_BOOK,
-  item: book,
+  ITEM,
 });
 
 const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  id: { id },
+  id
 });
 
 // Reducer part
@@ -25,11 +21,11 @@ const BooksReducers = (state = initialState, action) => {
     case ADD_BOOK:
       return [
         ...state,
-        action.item.book,
+        action.ITEM,
       ];
     case REMOVE_BOOK:
       return [
-        state.filter((book) => book.id !== action.id.id),
+        ...state.filter((book) => book.id !== action.id)
       ];
     default: return state;
   }

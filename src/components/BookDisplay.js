@@ -1,14 +1,14 @@
 import { useSelector } from 'react-redux';
 import Book from './Book';
 import InputBooks from './InputForm';
-/* eslint-disable */ 
+/* eslint-disable */
 const BookDisplay = () => {
-  const Books = useSelector((state) => state.Books)
+  const Booklists = useSelector((state) => state.Books)
   return (
     <div>
-      {Books.map((book) => (
-        <div key={book.id} className="bookCard">
-          <Book book={ book } title={book.Book} author={book.author} id={book.id} />
+      {Booklists.map((item) => (
+        <div className="bookCard">
+          <Book key={ item.id } Book={item.Book} author={item.author} id={item.id} />
         </div>
       ))}
       <InputBooks />
