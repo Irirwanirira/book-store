@@ -8,6 +8,6 @@ const reducers = combineReducers({
   Category: CategoryReducers,
 });
 
-const store = configureStore({ reducer: reducers });
+const Mystore = configureStore({ reducer: reducers });
 
-export default store;
+export default Mystore;
