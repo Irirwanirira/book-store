@@ -1,7 +1,8 @@
 // import { PropTypes } from "prop-types";
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/Books';
+import { removeBook } from '../redux/books/books';
+
 
 /* eslint-disable */
 

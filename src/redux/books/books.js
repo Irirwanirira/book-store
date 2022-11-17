@@ -12,7 +12,7 @@ const addBook = (ITEM) => ({
 
 const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  id
+  id,
 });
 
 // Reducer part
@@ -25,7 +25,7 @@ const BooksReducers = (state = initialState, action) => {
       ];
     case REMOVE_BOOK:
       return [
-        ...state.filter((book) => book.id !== action.id)
+        ...state.filter((book) => book.id !== action.id),
       ];
     default: return state;
   }
