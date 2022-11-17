@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
@@ -7,37 +6,36 @@ import { addBook } from '../redux/books/books';
 const InputBooks = () => {
   const [title, settitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('') 
-  
+  const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
 
   const createNewBook = (e) => {
-    e.preventDefault() 
+    e.preventDefault();
 
-    const newBook ={
+    const newBook = {
       item_id: uuidv4(),
       title,
       author,
       category,
-    }
+    };
 
-    dispatch(addBook(newBook))
-    settitle("");
-    setAuthor("");
-  }
+    dispatch(addBook(newBook));
+    settitle('');
+    setAuthor('');
+  };
 
   const BookInput = (e) => {
-    settitle(e.target.value)
-  }
+    settitle(e.target.value);
+  };
 
-  const authorInput=(e)=> {
-    setAuthor(e.target.value)
-  }
+  const authorInput = (e) => {
+    setAuthor(e.target.value);
+  };
 
-  const anyName = (e)=> {
-    setCategory(e.target.value)
-  }
+  const anyName = (e) => {
+    setCategory(e.target.value);
+  };
 
   return (
     <div>

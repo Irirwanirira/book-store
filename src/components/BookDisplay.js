@@ -4,12 +4,11 @@ import { getBook } from '../redux/books/books';
 import Book from './Book';
 import InputBooks from './InputForm';
 
-/* eslint-disable */
 const BookDisplay = () => {
   const dispatch = useDispatch();
 
   const Booklists = useSelector((state) => state.Books);
-  useEffect(()=> {
+  useEffect(() => {
     dispatch(getBook());
   }, [dispatch]);
   return (

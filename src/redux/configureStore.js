@@ -1,4 +1,3 @@
-/* eslint-disable*/
 import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 import BooksReducers from './books/books';

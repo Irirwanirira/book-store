@@ -1,15 +1,14 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { category } from '../redux/Categories/categories';
 
-/* eslint-disable */ 
 const Categories = () => {
-  const Category = useSelector(state =>state.Category)
+  const Category = useSelector((state) => state.Category);
   const dispatch = useDispatch();
 
   return (
     <div>
-      <button 
-      onClick={()=>{dispatch(category())}}
+      <button
+      onClick={() => { dispatch(category()); }}
       type="button">
       CHECK status
       </button>
