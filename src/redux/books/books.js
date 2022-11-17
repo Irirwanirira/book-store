@@ -4,9 +4,10 @@ const REMOVE_BOOK = 'book-store/book/REMOVE_BOOK';
 const initialState = [];
 
 // Action part
-const addBook = (book) => ({
+const addBook = (ITEM) => ({
+
   type: ADD_BOOK,
-  item: book,
+  ITEM,
 });
 
 const removeBook = (id) => ({
@@ -20,15 +21,14 @@ const BooksReducers = (state = initialState, action) => {
     case ADD_BOOK:
       return [
         ...state,
-        action.item.book,
+        action.ITEM,
       ];
     case REMOVE_BOOK:
       return [
-        state.filter((book) => book.id !== action.id),
+        ...state.filter((book) => book.id !== action.id),
       ];
-
     default: return state;
   }
 };
-export { addBook, removeBook };
+export { removeBook, addBook };
 export default BooksReducers;
