@@ -15,7 +15,8 @@ const BookDisplay = () => {
     <div>
       {Booklists.map((item) => (
         <div key={item.item_id} className="bookCar">
-          <Book title={item.title}
+          <Book
+            title={item.title}
             author={item.author}
             id={item.item_id}
             category={item.category}
