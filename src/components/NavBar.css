@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+
+.T-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title-h {
+  color: blue;
+}
+
+.link-d {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  opacity: 0.4;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
