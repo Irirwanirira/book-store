@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-/* eslint-disable */ 
+
 const NavBar = () => (
   <div className="nav">
     <div className="left">
@@ -10,7 +10,6 @@ const NavBar = () => (
         <Link to="/Category">Category</Link>
       </div>
     </div>
-    <div className="right"></div>
   </div>
 );
 

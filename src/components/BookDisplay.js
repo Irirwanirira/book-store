@@ -1,14 +1,26 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getBook } from '../redux/books/books';
 import Book from './Book';
 import InputBooks from './InputForm';
-/* eslint-disable */
+
 const BookDisplay = () => {
-  const Booklists = useSelector((state) => state.Books)
+  const dispatch = useDispatch();
+
+  const Booklists = useSelector((state) => state.Books);
+  useEffect(() => {
+    dispatch(getBook());
+  }, [dispatch]);
   return (
     <div>
       {Booklists.map((item) => (
-        <div className="bookCard">
-          <Book key={ item.id } Book={item.Book} author={item.author} id={item.id} />
+        <div key={item.item_id} className="bookCar">
+          <Book
+            title={item.title}
+            author={item.author}
+            id={item.item_id}
+            category={item.category}
+          />
         </div>
       ))}
       <InputBooks />

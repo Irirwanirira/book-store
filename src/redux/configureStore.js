@@ -1,5 +1,5 @@
-/* eslint-disable*/
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
 import BooksReducers from './books/books';
 import { CategoryReducers } from './Categories/categories';
 
@@ -8,6 +8,6 @@ const reducers = combineReducers({
   Category: CategoryReducers,
 });
 
-const Mystore = configureStore({ reducer: reducers });
+const Mystore = configureStore({ reducer: reducers }, applyMiddleware(thunk));
 
 export default Mystore;
