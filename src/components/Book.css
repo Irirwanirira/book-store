@@ -46,16 +46,18 @@
 
 .button-d {
   display: flex;
-  background-color: rgb(246, 243, 243);
+  background-color: #fff;
   align-items: center;
   justify-content: space-between;
 }
 
 .button-click {
+  background-color: #fff;
   color: blue;
   padding: 5px;
   border: none;
   cursor: pointer;
+  opacity: 0.4;
 }
 
 .percentage_value {
