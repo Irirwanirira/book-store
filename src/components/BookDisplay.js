@@ -14,8 +14,9 @@ const BookDisplay = () => {
   return (
     <div>
       {Booklists.map((item) => (
-        <div className='bookCard'>
-          <Book key={ item.item_id } title={item.title} author={item.author} id={item.item_id} category={item.category} />
+        <div key={item.item_id} className="bookCar">
+          <Book title={item.title} author={item.author}
+          id={item.item_id} category={item.category} />
         </div>
       ))}
       <InputBooks />

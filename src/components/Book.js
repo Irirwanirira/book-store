@@ -14,10 +14,19 @@ const Book = (book) => {
 
   return (
     <div>
-      <p>Book: {title}</p>
-      <p>Author: {author}</p>
-      <p>category: {category}</p>
-      <button type='button' onClick={handleDelte}>
+      <p>
+        Book: 
+        {title}
+      </p>
+      <p>
+        Author: 
+        {author}
+      </p>
+      <p>
+        category: 
+        {category}
+      </p>
+      <button type="button" onClick={handleDelte}>
         Remove Book
       </button>
     </div>

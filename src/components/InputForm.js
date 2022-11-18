@@ -39,9 +39,11 @@ const InputBooks = () => {
 
   return (
     <div>
-      <form onSubmit ={createNewBook}>
-      <input type="text" name="Book" placeholder="Book" required value={title} onChange={BookInput}/><br/>
-        <input type="text" name="author" placeholder="Written By" required value={author} onChange={authorInput}/><br/>
+      <form onSubmit = {createNewBook}>
+        <input type="text" name="Book" placeholder="Book" required value={title} onChange={BookInput} />
+        <br/>
+        <input type="text" name="author" placeholder="Written By" required value={author} onChange={authorInput} />
+        <br/>
         <select name="category" id="category" onChange={anyName}>
           <option>Action</option>
           <option>Romance</option>
@@ -52,7 +54,8 @@ const InputBooks = () => {
           <option>Thriller</option>
           <option>Drama</option>
         </select>
-        <button type="submit">Add Book</button><br/>
+        <button type="submit">Add Book</button>
+        <br/>
       </form>
     </div>
   );
