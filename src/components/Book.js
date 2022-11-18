@@ -15,15 +15,15 @@ const Book = (book) => {
   return (
     <div>
       <p>
-        Book: 
+        Book:
         {title}
       </p>
       <p>
-        Author: 
+        Author:
         {author}
       </p>
       <p>
-        category: 
+        category:
         {category}
       </p>
       <button type="button" onClick={handleDelte}>
