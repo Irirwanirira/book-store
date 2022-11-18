@@ -1,5 +1,7 @@
 .App {
   padding: 3rem 4rem;
   margin: 3rem 4rem;
+  border-radius: 10px;
   background-color: rgb(246, 243, 243);
+  box-shadow: 0 0 15px 10px rgb(192, 187, 187);
 }

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getBook } from '../redux/books/books';
 import Book from './Book';
 import InputBooks from './InputForm';
-import './BookDisplay.css'
+import './BookDisplay.css';
 
 const BookDisplay = () => {
   const dispatch = useDispatch();
@@ -13,8 +13,8 @@ const BookDisplay = () => {
     dispatch(getBook());
   }, [dispatch]);
   return (
-    <section className='section'>
-      <div className='book-part'>
+    <section className="section">
+      <div className="book-part">
         {Booklists.map((item) => (
           <div key={item.item_id} className="bookCar">
             <Book
@@ -26,8 +26,8 @@ const BookDisplay = () => {
           </div>
         ))}
       </div>
-      <div className='input'>
-       <InputBooks />
+      <div className="input">
+        <InputBooks />
       </div>
     </section>
   );

@@ -39,7 +39,7 @@ const InputBooks = () => {
   };
 
   return (
-    <footer className='footer'>
+    <footer className="footer">
       <h1 id="add-book">ADD NEW BOOK</h1>
       <form className='form' onSubmit={createNewBook}>
         <input type="text" name="Book" placeholder="Book title" required value={title} onChange={BookInput} />
@@ -57,7 +57,7 @@ const InputBooks = () => {
           <option>Thriller</option>
           <option>Drama</option>
         </select>
-        <button type="submit" className='addBook'>Add Book</button>
+        <button type="submit" className="addBook">Add Book</button>
         <br />
       </form>
     </footer>
