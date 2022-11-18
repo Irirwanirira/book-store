@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import './inputForm.css';
 
 const InputBooks = () => {
   const [title, settitle] = useState('');
@@ -38,13 +39,15 @@ const InputBooks = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={createNewBook}>
-        <input type="text" name="Book" placeholder="Book" required value={title} onChange={BookInput} />
+    <footer className="footer">
+      <h1 id="add-book">ADD NEW BOOK</h1>
+      <form className="form" onSubmit={createNewBook}>
+        <input type="text" name="Book" placeholder="Book title" required value={title} onChange={BookInput} />
         <br />
         <input type="text" name="author" placeholder="Written By" required value={author} onChange={authorInput} />
         <br />
-        <select name="category" id="category" onChange={anyName}>
+        <select name="category" id="category" onChange={anyName} className="d-option">
+          <option>Category</option>
           <option>Action</option>
           <option>Romance</option>
           <option>Commedy</option>
@@ -54,10 +57,10 @@ const InputBooks = () => {
           <option>Thriller</option>
           <option>Drama</option>
         </select>
-        <button type="submit">Add Book</button>
+        <button type="submit" className="addBook">ADD BOOK</button>
         <br />
       </form>
-    </div>
+    </footer>
   );
 };
 export default InputBooks;

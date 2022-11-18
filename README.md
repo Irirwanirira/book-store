@@ -105,6 +105,8 @@ Give a ⭐ if you like this project!
 ## Acknowledgments
 
 - Microverse Team.
+- Usman Suleiman Babakolo for the design.
+- Coding partner.
 
 ## 📝 License
 
