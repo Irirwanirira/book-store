@@ -14,11 +14,11 @@ const NavBar = () => (
     </div>
     <span className="userProfile-container d-flex">
       <FaUserAlt style={{
-          color: '#0290ff',
-          height: '15px',
-          cursor: 'pointer',
-          transition: 'all ease-in 300ms',
-        }}
+        color: '#0290ff',
+        height: '15px',
+        cursor: 'pointer',
+        transition: 'all ease-in 300ms',
+      }}
       />
     </span>
   </header>

@@ -41,7 +41,7 @@ const InputBooks = () => {
   return (
     <footer className="footer">
       <h1 id="add-book">ADD NEW BOOK</h1>
-      <form className='form' onSubmit={createNewBook}>
+      <form className="form" onSubmit={createNewBook}>
         <input type="text" name="Book" placeholder="Book title" required value={title} onChange={BookInput} />
         <br />
         <input type="text" name="author" placeholder="Written By" required value={author} onChange={authorInput} />
