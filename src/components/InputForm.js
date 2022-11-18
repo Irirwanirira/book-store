@@ -57,7 +57,7 @@ const InputBooks = () => {
           <option>Thriller</option>
           <option>Drama</option>
         </select>
-        <button type="submit" className="addBook">Add Book</button>
+        <button type="submit" className="addBook">ADD BOOK</button>
         <br />
       </form>
     </footer>

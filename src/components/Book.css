@@ -39,7 +39,7 @@
 
 .author {
   font-size: 10px;
-  color: blue;
+  color: #0290ff;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1em;
 }
@@ -53,7 +53,7 @@
 
 .button-click {
   background-color: #fff;
-  color: blue;
+  color: #0290ff;
   padding: 5px;
   border: none;
   cursor: pointer;
